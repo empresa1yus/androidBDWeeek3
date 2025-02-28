@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/botones_diseno"
-    android:layout_margin="20dp"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/editUsername"
-        android:layout_width="302dp"
-        android:layout_height="44dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
         android:layout_weight="1"
         android:ems="10"
         android:layout_marginTop="10dp"
@@ -26,7 +26,6 @@
         android:background="@drawable/botones_diseno"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.577"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.155" />
@@ -48,21 +47,21 @@
 
     <EditText
         android:id="@+id/editTextText2"
-        android:layout_width="209dp"
-        android:layout_height="47dp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
         android:background="@drawable/botones_diseno"
         android:ems="10"
-        android:padding="10dp"
         android:hint="numero"
         android:inputType="number"
+        android:padding="10dp"
         android:textColorHint="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintHorizontal_bias="0.71"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.239" />
+        app:layout_constraintVertical_bias="0.23" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
