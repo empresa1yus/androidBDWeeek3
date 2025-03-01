@@ -11,15 +11,15 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(
         private const val DATABASE_NAME = "contacts.db"
         private const val DATABASE_VERSION = 1
         const val TABLE_NAME = "contactos"
-        const val COLUMN_ID = "id_contacto"
-        const val COLUMN_NAME = "nombreUsuario"
-        const val COLUMN_PHONE = "numeroCelular"
+        const val COLUMN_ID = "ud"
+        const val COLUMN_NAME = "name"
+        const val COLUMN_PHONE = "phone"
     }
 
     override fun onCreate(bd: SQLiteDatabase?) {
         val createTableQuery = """
             CREATE TABLE $TABLE_NAME (
-                $COLUMN_ID INTEGER PRIMARY KEY, 
+                $COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, 
                 $COLUMN_NAME TEXT, 
                 $COLUMN_PHONE TEXT)""".trimIndent()
 

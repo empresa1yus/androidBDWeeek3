@@ -20,9 +20,9 @@
         android:inputType="phone" />
 
     <Button
-        android:id="@+id/registerButton"
+        android:id="@+id/updateButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar" />
+        android:text="Actualizar" />
 
 </LinearLayout>

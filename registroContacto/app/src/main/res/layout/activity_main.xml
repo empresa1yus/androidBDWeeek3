@@ -1,67 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/botones_diseno"
-    android:padding="10dp"
-    tools:context=".MainActivity">
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <EditText
-        android:id="@+id/editUsername"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
+    <!-- Lista de contactos -->
+    <ListView
+        android:id="@+id/contactsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:ems="10"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="40dp"
-        android:padding="10dp"
-        android:hint="username"
-        android:inputType="text"
-        android:textColorHint="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:background="@drawable/botones_diseno"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155" />
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
 
-    <TextView
-        android:id="@+id/textTitle"
-        android:layout_width="wrap_content"
+    <!-- Botones en la parte inferior -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LISTA DE REGISTROS"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.068" />
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
 
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:background="@drawable/botones_diseno"
-        android:ems="10"
-        android:hint="numero"
-        android:inputType="number"
-        android:padding="10dp"
-        android:textColorHint="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.71"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23" />
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Actualizar" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Eliminar" />
+    </LinearLayout>
+
+</LinearLayout>
