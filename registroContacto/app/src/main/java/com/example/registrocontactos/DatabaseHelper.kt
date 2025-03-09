@@ -11,7 +11,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(
         private const val DATABASE_NAME = "contacts.db"
         private const val DATABASE_VERSION = 1
         const val TABLE_NAME = "contactos"
-        const val COLUMN_ID = "ud"
+        const val COLUMN_ID = "id"
         const val COLUMN_NAME = "name"
         const val COLUMN_PHONE = "phone"
     }

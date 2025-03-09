@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:id="@+id/main"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="26dp">
 
     <!-- Lista de contactos -->
     <ListView
@@ -12,15 +12,20 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="1dp" />
+        android:divider="@android:color/black"
+        android:dividerHeight="2dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/listaview"/>
 
     <!-- Botones en la parte inferior -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="16dp">
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp">
 
         <Button
             android:id="@+id/addButton"

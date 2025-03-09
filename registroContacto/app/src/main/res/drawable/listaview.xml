@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color cuando el elemento está presionado -->
+    <item android:drawable="@color/azul_masClaro" android:state_pressed="true"/>
+
+    <!-- Color cuando el elemento está seleccionado -->
+    <item android:drawable="@color/oscuroNegro" android:state_selected="true"/>
+
+    <!-- Color normal cuando no está seleccionado -->
+    <item android:drawable="@android:color/white"/>
+</selector>

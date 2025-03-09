@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        setContentView(R.layout.activity_main)
 
         contactsListView = findViewById(R.id.contactsListView)
         addButton = findViewById(R.id.addButton)
@@ -28,12 +29,12 @@ class MainActivity : AppCompatActivity() {
         deleteButton = findViewById(R.id.deleteButton)
         dbHelper = DatabaseHelper(this)
 
-        setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         loadContacts()
 
         contactsListView.setOnItemClickListener { _, _, position, _ ->
@@ -42,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         addButton.setOnClickListener {
-            val intent = Intent(this, AddContactActivity::class.java)
+            val intent = Intent(this, registrarCon::class.java)
             startActivityForResult(intent, ADD_CONTACT_REQUEST)
         }
 
@@ -50,7 +51,7 @@ class MainActivity : AppCompatActivity() {
             if (selectedContactId == -1) {
                 Toast.makeText(this, "Seleccione un contacto", Toast.LENGTH_SHORT).show()
             } else {
-                val intent = Intent(this, UpdateContactActivity::class.java).apply {
+                val intent = Intent(this, ActualizarDatos::class.java).apply {
                     putExtra("CONTACT_ID", selectedContactId)
                 }
                 startActivityForResult(intent, UPDATE_CONTACT_REQUEST)
