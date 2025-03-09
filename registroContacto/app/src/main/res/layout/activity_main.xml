@@ -15,8 +15,7 @@
         android:divider="@android:color/black"
         android:dividerHeight="2dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="50dp"
-        android:background="@drawable/listaview"/>
+        android:layout_marginBottom="50dp"/>
 
     <!-- Botones en la parte inferior -->
     <LinearLayout
@@ -32,21 +31,24 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="+" />
+            android:text="+"
+            android:background="@drawable/botenviar"/>
 
         <Button
             android:id="@+id/updateButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Actualizar" />
+            android:text="Actualizar"
+            android:background="@drawable/botenviar"/>
 
         <Button
             android:id="@+id/deleteButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Eliminar" />
+            android:text="Eliminar"
+            android:background="@drawable/botenviar"/>
     </LinearLayout>
 
 </LinearLayout>

@@ -3,31 +3,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/main"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/diseno_contacto">
 
     <EditText
         android:id="@+id/nameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="80dp"
-        android:hint="Nombre"/>
+        android:hint="Nombre"
+        android:textColorHint="@color/white"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/botenviar"/>
 
     <EditText
         android:id="@+id/phoneEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginHorizontal="20dp"
         android:hint="Número"
         android:padding="10dp"
-        android:inputType="phone" />
+        android:textColorHint="@color/white"
+        android:background="@drawable/botenviar"
+        android:layout_marginBottom="20dp"
+        android:inputType="phone"/>
 
     <Button
         android:id="@+id/registerButton"
